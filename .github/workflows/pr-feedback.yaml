@@ -1,0 +1,19 @@
+# DEAR STUDENTS - DO NOT MODIFY THIS FILE! ⚠️
+#
+# This workflow provides automated task testing and personalized feedback
+# Modifying this file might break it.
+# Keep this file as-is to enjoy all learning platform features!
+
+name: PR Feedback
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  feedback:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Analyze PR
+      uses: exit0-io/pr-feedback-action@v1
